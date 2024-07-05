@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0e6f6;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #6a1b9a;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        main {
+            padding: 20px 0;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #6a1b9a;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .gallery-container img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #6a1b9a;
+            color: #fff;
+        }
+
+        /* Style for the quiz */
+        #quiz {
+            text-align: left;
+        }
+
+        #quiz label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        #quiz input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        #quiz button {
+            margin-top: 10px;
+        }
+
+        #result {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Happy Birthday, Mrs. Katyal!</h1>
+        </header>
+        <main>
+            <section id="quiz">
+                <h2>Birthday Quiz</h2>
+                <form id="quizForm">
+                    <label for="q1">1. What is my favorite color?</label>
+                    <input type="radio" name="q1" value="a"> Black<br>
+                    <input type="radio" name="q1" value="b"> lavender<br>
+                    <input type="radio" name="q1" value="c"> white<br>
+
+                    <label for="q2">2. Aniversary date?</label>
+                    <input type="radio" name="q2" value="a"> 29 oct<br>
+                    <input type="radio" name="q2" value="b"> 24 oct<br>
+                    <input type="radio" name="q2" value="c"> 27 oct<br>
+
+                    <label for="q3">3. What is my favorite for u</label>
+                    <input type="radio" name="q3" value="a"> musky<br>
+                    <input type="radio" name="q3" value="b"> mrs katyal<br>
+                    <input type="radio" name="q3" value="c"> motuuuu<br>
+
+                    <button type="button" onclick="checkAnswers()">Submit</button>
+                </form>
+                <p id="result"></p>
+            </section>
+
+            <section id="welcome" style="display: none;">
+                <h2>Welcome Mrs Katyal</h2>
+                <p>THE BEST DAY IS HERE FOR U MY LOVE.</p>
+            </section>
+            <section id="gallery" style="display: none;">
+                <h2>Gallery</h2>
+                <div class="gallery-container">
+                    <!-- Add her pictures here -->
+                    <img src="WhatsApp Image 2024-06-11 at 15.29.19_8ea1fd0d.jpg" alt="Her Picture 1" onclick="showMessage('Traditional is love !')">
+                    <img src="WhatsApp Image 2024-06-11 at 15.29.19_64f43b23.jpg" alt="Her Picture 2" onclick="showMessage('Best day so far!')">
+                    <img src="WhatsApp Image 2024-06-11 at 15.29.19_7988857d.jpg" alt="Her Picture 3" onclick="showMessage('Cutest pic!')">
+                </div>
+            </section>
+            <section id="messages" style="display: none;">
+                <h2>Messages
+                    Aagya finally meriii jaan ka bdayy too mrs katyal aaj haii july 7th meriii jaan
+                     the dayy u were born merii jaan aaj tera bday hota and hamara guru jii bday too 
+                     janna kaafi time ma guru ji ko manta hu and i asked for good life partner jo unki
+                      tarah ho caring supporting good nature and all that then on 19august when meriii 
+                      duniyaa badal gyiii ek din tha fir ek aaj ka din mana hai boht rula parr 
+                      kahi jana nhi diya bohtt harkata par tera liya sudhr gyaa merii jaan i 
+                      just want to know the thing that i say daily in between every message 
+                      I LOVE U MRS KATYAL.Janna yeah sentence haii yeah terkoo face to facebolna kaliya jitna excited huu yaarr yeah jisa cringe zarurlg ga gi parr jaab ek ldkii ka name ka sath apka surname or wo 
+ ldki apki pasandida aurat too ur at cloud 9 legitt yaar  
+ ik yeah 19th bday pa 19 gifts deka u
+  will happy parr meriii jaan tu pta 
+  haiii kaab sabsa zayada jaab mera sath hotii chaha mai koi du ya na du parrr 
+  i don’t know how mai ek simp person jisa logo na durr rahena kha wo ekk ldkii ka 
+  pasandida insaan ban gya wo ek ldkiii kaa pyaar ban gyaa muskaan jo bhi saab kr 
+  rha hu na yeah kabhi socha ki kruga ek simple sa sentance bolta hu my efforts ar
+  e materlestic and ur aree direct heart to heart.Janna i wantt to thankk uncle auntyy
+   for makingg u way different from the world i never seen a girl jo apna bnda
+   ka har male friend  ko bola bina bhai bulati or 
+   sabsa important agar usna bhai bulaya to dil sa
+    mana ek sagah jaisa wo treat krti haiii yeah 
+    sirf ldko mai dekhaa too one out of trillions haiii 🥺🥺🫀🫀🫀meriii jaan i want thankkk uu 
+    forr choosingg this idot sa ldka as ur boyfriend life partner kyuu bhyiii aisa kya tha jo tha wo tha
+     jo hu sirf teri wajah jaisa bhii jo bana hai wo sirf sa bna jo sahi decision lena sikha awaz uthani 
+    sikhaa sirf teriii wajah meriii i love u mrs katyal 🥺🥺🫀🫀.Janna Yeah jo physical mental attraction haiii jo physical
+     involvement kriii haiii sirf sapna socha tha tuna hakikat bana dii.Yeahh kurti suit dilwana sirf khawab tha un khawabo 
+     och krwadiyaa bhyiii dil jo sukoon milta haii jaab apni bandi kaliya aisa kuch lena apni ma jaka jaab merii terkoo betiii
+      manlagyiii jealous hua 😜parr dil ko sukoon mila haii nai yadav jiii woo kbhi 
+      bhi nhi socha tha ki aisa kuch hogaa aisa pyaarr 🫀🫀🥺🥺.Too jii happy birthday Mrs Katyal I hope you achieve
+       everything you deserve too gett u get every happiness u wantt just wantt to with u forever and ever meriii jaan ♾♾♾
+                </h2>
+          
+           
+        </main>
+        <footer>
+            <p>Made with ❤️ by [UR JANNA]</p>
+        </footer>
+    </div>
+
+    <script>
+        // Function to check answers and show result
+        function checkAnswers() {
+            var form = document.getElementById('quizForm');
+            var resultElement = document.getElementById('result');
+            var correctAnswers = 0;
+
+            if (form.q1.value === "b") {
+                correctAnswers++;
+            }
+            if (form.q2.value === "a") {
+                correctAnswers++;
+            }
+            if (form.q3.value === "c") {
+                correctAnswers++;
+            }
+
+            if (correctAnswers === 3) {
+                resultElement.textContent = "Congratulations! You answered all questions correctly. Click below to continue.";
+                document.getElementById('welcome').style.display = 'block';
+                document.getElementById('gallery').style.display = 'block';
+                document.getElementById('messages').style.display = 'block';
+                document.getElementById('about').style.display = 'block';
+                document.getElementById('quiz').style.display = 'none';
+            } else {
+                resultElement.textContent = "Oops! You didn't answer all questions correctly. Please try again.";
+            }
+        }
+
+        // Function to show messages on clicking images
+        function showMessage(message) {
+            alert(message);
+        }
+
+    </script>
+</body>
+</html>
